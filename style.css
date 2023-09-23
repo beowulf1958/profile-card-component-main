@@ -80,6 +80,7 @@
   .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--clr-text-bold);
     margin-top: 10px;
   }
   .attribution a {
