@@ -1,0 +1,109 @@
+:root {
+    --clr-body-bg: hsl(185, 75%, 39%); /* Dark cyan */
+    --clr-text-bold: hsl(229, 23%, 23%); /* Very dark desaturated blue */
+    --clr-text-main: hsl(227, 10%, 46%); /* Dark grayish blue */
+    --clr-text-light: hsl(0, 0%, 59%); /* Dark gray */
+    --clr-card-bottom: hsl(0, 0%, 100%);
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--clr-body-bg);
+    color: var(--clr-text-light);
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  .wrapper {
+    max-width: 75%;
+    margin-left: 0.5rem;
+  }
+
+  .card {
+    position: relative;
+    width: 15rem;
+    margin: 3rem auto;
+    background-color: var(--clr-card-bottom);
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Background */
+  .pattern-top,
+  .pattern-bottom {
+    width: 15rem;
+    height: 15rem;
+  }
+  .pattern-top {
+    position: absolute;
+    top: -8rem;
+    left: -8rem;
+  }
+  .pattern-bottom {
+    position: absolute;
+    bottom: -3.5rem;
+    right: -4rem;
+  }
+  /* End Background*/
+
+  .bold {
+    color: var(--clr-text-bold);
+    font-weight: 700;
+  }
+
+  .card-top {
+    width: 100%;
+    height: 6rem;
+    background-image: url(./images/bg-pattern-card.svg);
+  }
+
+  .avatar {
+    border-radius: 50%;
+    position: relative;
+    top: -2rem;
+  }
+
+  /* Attribution */
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  /* Desktop Version */
+  @media screen and (min-width: 400px) {
+    .card {
+      margin-left: 50%;
+    }
+    .pattern-top,
+    .pattern-bottom {
+      width: 35rem;
+      height: 25rem;
+    }
+    .pattern-top {
+      position: absolute;
+      top: -8rem;
+      left: -8rem;
+    }
+    .pattern-bottom {
+      position: absolute;
+      bottom: -8rem;
+      right: -8rem;
+    }
+  }
